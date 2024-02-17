@@ -472,21 +472,6 @@ header:not(.page-scrolled) ~ #back-to-top {
     }
 }
 
-/* --- CONTENT LAYOUT --- */
-
-.image-container {
-    display: none;
-    position: relative;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-@media only screen and (min-width: 992px) {
-    .image-container {
-        display: flex;
-    }
-}
-
 /* --- HEADER --- */
 
 #header {
@@ -849,9 +834,29 @@ img.language-icon {
 
 /* --- ABOUT --- */
 
-@media only screen and (max-width: 1400px) {
-    .about-text-container {
-        order: -1;
+.image-container {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #ddd url(../images/photos/application-photo.png) center no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    order: 1;
+    transform: scaleX(-1) rotate(3deg);
+}
+
+@media only screen and (max-width: 1199px) {
+    .about-container {
+        display: block;
+    }
+
+    .about-container .headline-container {
+        text-align: center;
+    }
+
+    .image-container {
+        margin-bottom: var(--spacing-large);
     }
 }
 
