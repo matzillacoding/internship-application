@@ -87,6 +87,7 @@
     --transition-text: ease .3s all;
     --transition-icon: ease .5s all;
     --transition-container: ease .5s all;
+    --transition-btn: ease-in-out .3s all;
     --transition: ease .3s all;
 
     --image-ratio: 5 / 6;
@@ -361,6 +362,11 @@ img {
     border: var(--border-width) solid;
 }
 
+.btn-border:hover {
+    background: var(--color-accent-primary);
+    border-color: var(--color-accent-primary);
+}
+
 .btn-clean {
     background: transparent;
 }
@@ -378,6 +384,10 @@ img {
 .btn-accent {
     color: var(--color-contrast-primary);
     background: var(--color-accent-primary);
+}
+
+.btn-accent:hover {
+    background: var(--color-accent-secondary);
 }
 
 .btn-opacity {
@@ -837,7 +847,7 @@ img.language-icon {
 .image-container {
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: #ddd url(../images/photos/application-photo.png) center no-repeat;
+    background: #ddd url(../images/photos/application-photo-600-min.png) center no-repeat;
     background-size: contain;
     width: 100%;
     max-width: 520px;

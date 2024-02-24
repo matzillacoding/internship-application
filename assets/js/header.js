@@ -55,5 +55,3 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollState();
     }
 });
-
-ddocument.addEventListener("DOMCONtentLoaded", cunf)
