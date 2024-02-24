@@ -31,7 +31,7 @@ elements.forEach( elem => {
 const headerToggle = function () {    
     toggleElements.forEach(elem => {
         elem.classList.toggle("open");
-    });    
+    });  
 }
 
 /* Definition of Scroll-Behaviour */

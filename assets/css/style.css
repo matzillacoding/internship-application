@@ -137,6 +137,10 @@ body {
     padding: 0;
 }
 
+body.open {
+    overflow: hidden;
+}
+
 section {
     position: relative;
     background: var(--color-background-primary);
@@ -538,7 +542,7 @@ header:not(.page-scrolled) ~ #back-to-top {
     right: 1px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
     .page-scrolled .icon {
         display: flex;
     }
@@ -727,7 +731,7 @@ img.language-icon {
     font-size: var(--font-size-extra-large);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
     .icon {
         height: 100%;
         padding-left: var(--spacing-large);
